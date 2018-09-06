@@ -1,0 +1,3 @@
+Hey!
+
+This is proof to Git that this folder contains something (it shouldn't otherwise! The logs are hidden) so as to push it to the repo.
