@@ -21,14 +21,14 @@ module.exports = {
             imgName varchar(200) DEFAULT 'default.jpg'
         );`
 
-        // Create Session
+        // Create Sessions
         sql += `CREATE TABLE Sessions(
             id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
             userId int NOT NULL,
             hash varchar(64) NOT NULL
         );`
 
-        // Create Comment
+        // Create Comments
         sql += `CREATE TABLE Comments(
             id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
             authorUserId int NOT NULL,
@@ -49,7 +49,7 @@ module.exports = {
                                           3 - both users block each other */
         );`
 
-        // Create Group
+        // Create Groups
         sql += `CREATE TABLE Groups(
             id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
             name varchar(50) NOT NULL,
