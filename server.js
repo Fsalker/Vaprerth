@@ -10,7 +10,7 @@ var CONNECTION_JSON = {
     user: process.env.db_user || secrets.db_user,
     password: process.env.db_pass || secrets.db_pass,
     host: process.env.db_host || secrets.db_host,
-    database: process.env.db_db || secrets.db_database,
+    database: process.env.db_database || secrets.db_database,
     multipleStatements: true
 }
 
