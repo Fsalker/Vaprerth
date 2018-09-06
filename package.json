@@ -2,14 +2,15 @@
   "name": "smechereala",
   "version": "1.0.0",
   "description": "yo yo dany mokanu",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "cel mai jmek dintre bashtany",
   "license": "ISC",
   "dependencies": {
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "mysql": "^2.16.0"
   }
 }
