@@ -14,6 +14,8 @@ var CONNECTION_JSON = {
     multipleStatements: true
 }
 
+console.log(CONNECTION_JSON)
+
 // Database
 const DROP_AND_CREATE_TABLES = true;
 
