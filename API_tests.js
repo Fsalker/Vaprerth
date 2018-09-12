@@ -11,3 +11,5 @@ if( a + b != expected)
 expected = 15
 if( a * b != expected)
     throw "fuck"
+
+throw "now you should die potato"
