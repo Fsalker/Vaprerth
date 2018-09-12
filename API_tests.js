@@ -8,6 +8,6 @@ expected = 8
 if( a + b != expected)
     throw "fuck"
 
-expected = 10
-if( a + b != expected)
+expected = 15
+if( a * b != expected)
     throw "fuck"
