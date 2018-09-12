@@ -1,5 +1,6 @@
-var http = require("http");
+var http = require("http")
 var mysql = require("mysql")
+var fs = require("fs")
 
 var APIs = require("./server/APIs.js")
 var log = require("./server/logging.js").log
@@ -22,9 +23,10 @@ const DROP_AND_CREATE_TABLES = false; // Delete all tables and remake them. Bear
 // Run da Server
 startServer()
 
+var con; // Connection variable
 function startServer(){
     var server = http.createServer(requestListener);
-    var con = mysql.createConnection(CONNECTION_JSON)
+    con = mysql.createConnection(CONNECTION_JSON)
 
     log("Starting server!")
     log("Connecting to DB...")
@@ -54,14 +56,44 @@ function requestListener(req, res){
         log("Client "+clientIP+" has requested: " + req.url)
         var url = req.url
 
-        // API calls
-        API_url = url.substring(1)
-        if(APIs[API_url]){
-            log("An API has been called!")
-            APIs[API_url]()
+        // Solve public file request (.html, .js, .png, ...)
+        var rightmostItem = url.split("/").pop()
+        if(url == "/" || rightmostItem.indexOf(".") != -1) { // Index request OR file request because the extension is specified (no, we don't serve files that don't have extensions. Sorry!)
+            if(url == "/") rightmostItem = "index.html" // Handle default index requests
+            log("File has been requested: " + rightmostItem)
+            fs.readFile("./public/"+rightmostItem, function(err, data){
+                if(err) {log(err); res.end("Oh noes, an error has occurred during processing your request.")}
+                else {
+                    var extension = rightmostItem.split(".").pop()
+                    log("File has been sent succesfully!")
+                    res.end(data)
+                }
+            })
         }
-
-        res.end("Hey there!");
+        else {
+            // Solve API calls
+            API_url = url.substring(1)
+            if (APIs[API_url]) { // This is an API request
+                log("An API has been requested!")
+                var body = []
+                // Catch incoming request body data
+                req.on("error", (e) => {throw encodeURI()})
+                req.on("data", (chunk) => {body.push(chunk)})
+                req.on("end", () => {
+                    try{
+                        body = JSON.parse(Buffer.concat(body).toString())
+                        APIs[API_url](res, con, body) // Let the API function handle our request
+                    }
+                    catch(e)
+                    {
+                        log(e)
+                        res.end("An error has occurred. Most likely, the request data could not be parsed.")
+                    }
+                })
+            }
+            else // This is... dunno, nothing.
+                res.end("Hey there! Your request could not be processed. This is likely a programming error! Stand by until we've solved it... (or contact us)");
+        }
     }
     catch(e){
         log(e)

@@ -1,0 +1,27 @@
+<head>
+
+</head>
+<body>
+    Name: <input id="name" placeholder="Username"><br>
+    Password: <input id="pass" type="password"><br>
+    Birthdate: <input id="bday" type="date"><br>
+    email: <input id="email" type="email"><br>
+    <button id="but" onclick="register()">register</button>
+
+    <script>
+        function register(){
+            console.log("registering")
+            var req = new XMLHttpRequest()
+            req.open("POST", "/register")
+            req.setRequestHeader("content-type", "application/json")
+            req.send(JSON.stringify({email: document.querySelector("#email").value,username: document.querySelector("#name").value, password: document.querySelector("#pass").value, birthDate: document.querySelector("#bday").value}))
+
+            req.onreadystatechange = function(){
+                if(this.readyState == 4){
+                    console.log(this.responseText)
+                    if(this.status == 200) console.log("Registered!")
+                }
+            }
+        }
+    </script>
+</body>

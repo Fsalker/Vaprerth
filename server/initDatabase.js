@@ -33,9 +33,10 @@ module.exports = {
         // Create Users
         sql += `CREATE TABLE Users(
             id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-            username varchar(30) NOT NULL,
+            username varchar(30) UNIQUE NOT NULL,
             password_hash varchar(64) NOT NULL,
             birthDate DATETIME NOT NULL,
+            email varchar(100) UNIQUE NOT NULL,
             country varchar(30),
             biography varchar(1000),
             imgName varchar(200) DEFAULT 'default.jpg',
@@ -139,7 +140,7 @@ module.exports = {
         );`
 
         // Test insertion
-        sql += "INSERT INTO Users(username, password_hash, birthDate) VALUES('gioni samantarul', 'hithwewthi', '1995-10-10'), ('smecherales', 'hdfhsdfhdf', '1992-02-07');"
+        sql += "INSERT INTO Users(username, password_hash, birthDate, email) VALUES('gioni samantarul', 'hithwewthi', '1995-10-10', 'hola'), ('smecherales', 'hdfhsdfhdf', '1992-02-07', 'hfdsh');"
 
         // Test selection
         sql += "SELECT * FROM Users;"
