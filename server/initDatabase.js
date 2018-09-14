@@ -73,6 +73,7 @@ module.exports = {
         // Create Events
         sql += `CREATE TABLE Events(
             id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+            authorUserId int NOT NULL,
             date DATETIME DEFAULT 0,
             publicity varchar(20) NOT NULL,
             ts DATETIME DEFAULT CURRENT_TIMESTAMP
@@ -81,7 +82,7 @@ module.exports = {
         // Create Posts
         sql += `CREATE TABLE Posts(
             id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-            userId int NOT NULL,
+            authorUserId int NOT NULL,
             resourceLocation varchar(100) DEFAULT '',
             ts DATETIME DEFAULT CURRENT_TIMESTAMP
         );`
@@ -89,8 +90,7 @@ module.exports = {
         // Create Settings
         sql += `CREATE TABLE Settings(
             id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-            userId int NOT NULL,
-            settingId int NOT NULL,
+            settingName varchar(50) NOT NULL
             value varchar(20) NOT NULL
         );`
 

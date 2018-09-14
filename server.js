@@ -1,6 +1,7 @@
 var http = require("http")
 var mysql = require("mysql")
 var fs = require("fs")
+var util = require("util")
 
 var APIs = require("./server/APIs.js")
 var log = require("./server/logging.js").log
@@ -10,6 +11,7 @@ try{ secrets = require("./server/secrets.js") } catch(e) {console.log("secrets.j
 
 // Connection string
 var CONNECTION_JSON = {
+    connectionLimit: 10,
     user: process.env.db_user || secrets.db_user,
     password: process.env.db_pass || secrets.db_pass,
     host: process.env.db_host || secrets.db_host,
@@ -27,9 +29,12 @@ var con; // Connection variable
 function startServer(){
     var server = http.createServer(requestListener);
     con = mysql.createConnection(CONNECTION_JSON)
+    //con = mysql.createPool(CONNECTION_JSON)
+    con.query = util.promisify(con.query) // Make quieries "await"able
 
     log("Starting server!")
     log("Connecting to DB...")
+    //con.getConnection(function(err){
     con.connect(function(err){
         if(err) throw err;
 

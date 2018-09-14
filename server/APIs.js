@@ -1,12 +1,24 @@
 var mysql = require("mysql")
-var crypto=require("crypto")
+var crypto = require("crypto")
 var log = require("./logging.js").log
 
 const SALT = require("./secrets.js").hash_salt
 const SESSION_LENGTH_DAYS = 30
 
+async function deleteAllUserComments(con, username){
+    console.log("User comments have been deleted! (Actually... no, this function has yet to be implemented!)")
+    return "ok"
+}
+
+async function deleteAllUserPosts(con, username){
+    console.log("User posts have been deleted! (Actually... no, this function has yet to be implemented!)")
+    return "ok"
+}
+
+
 function logErrorAndEndRequest(res, err){
     log(err)
+    res.writeHead(500)
     res.end("An error has occurred when handling the request.")
 }
 
@@ -33,7 +45,8 @@ function generateUserSession(res, con, username, callback){ // And return the ha
 function validateUserAuthentification(res, con, username, sessionHash, callback){ // Checks if the user can auth with their session and calls a callback with a true/false argument
     con.query("SELECT a.id FROM Users a JOIN Sessions b on a.id = b.userId  WHERE a.username = ? AND b.hash = ? AND b.ts >= DATE_SUB(NOW(), INTERVAL "+SESSION_LENGTH_DAYS+" DAY) ORDER BY b.ts DESC", [username, sessionHash], function(err, q_res, fields){
         if(err) logErrorAndEndRequest(res, err)
-        callback(q_res.length > 0)
+        if(q_res.length == 0) endRequestWithMessage(res, 401, "Authentification failed")
+        else callback()
     })
 }
 
@@ -46,7 +59,7 @@ module.exports = { // Request functions: all of them receive GET / POST / etc pa
         email
 
             Output:
-         200 with {sessionHash: string} or 400 with message */
+         {sessionHash: string} */
     register: function(res, con, data){
         if(!data.username || !data.password || !data.birthDate || !data.email) return endRequestWithMessage(res, 400, "Invalid parameters")
         var age = (Date.now() - new Date(data.birthDate)) / (1000*60*60*24*365)
@@ -70,7 +83,7 @@ module.exports = { // Request functions: all of them receive GET / POST / etc pa
         password
 
             Output:
-         200 with {sessionHash: string} or 400 / 401 with message */
+        {sessionHash: string} */
     login: function(res, con, data){
         if(!data.username || !data.password) return endRequestWithMessage(res, 400, "Invalid parameters")
         data.password = hash_string(data.password)
@@ -87,17 +100,16 @@ module.exports = { // Request functions: all of them receive GET / POST / etc pa
         })
     },
 
-    /*      Input:
-            username
-            sessionHash
-
-            */
+    /* Logs out an user by destroying the associated session
+          Input:
+        username
+        sessionHash */
     logout: function(res, con, data){
         if(!data.username || !data.sessionHash) return endRequestWithMessage(res, 400, "Invalid parameters")
         validateUserAuthentification(res, con, data.username, data.sessionHash, function(goodCredentials){
-            if(!goodCredentials) return endRequestWithMessage(res, 401, "Authentification failed")
             con.query("DELETE FROM Sessions WHERE userId IN(SELECT id FROM Users WHERE username=?) AND hash=?", [data.username, data.sessionHash], function(err, q_res, fields){
                 if(err) return logErrorAndEndRequest(res, err)
+                log("User "+data.username+" has logged out.")
                 endRequestWithMessage(res, 200, "Okay")
             })
         })
@@ -135,8 +147,35 @@ module.exports = { // Request functions: all of them receive GET / POST / etc pa
 
     },
 
-    deleteAccount: function(res, con, data){
+    /*
+            Input:
+        username
+        password*/
+    deleteAccount: async function(res, con, data){
+        try {
+            if (!data.username || !data.password) return endRequestWithMessage(res, 400, "Invalid parameters")
+            data.password = hash_string(data.password)
 
+            q_res = await con.query("SELECT id FROM Users WHERE username = ?", [data.username])
+            if(q_res.length == 0) return endRequestWithMessage(res, 200, "User doesn't exist anyway.")
+
+            q_res = await con.query("SELECT id FROM Users WHERE username = ? AND password_hash = ?", [data.username, data.password])
+            if(q_res.length == 0) return endRequestWithMessage(res, 401, "Login failed")
+
+            await con.query(`DELETE FROM Users WHERE username = ?;
+                             DELETE FROM Sessions WHERE userId IN(SELECT id FROM Users WHERE username = ?);
+                             DELETE FROM UserToUser WHERE userId_from IN(SELECT id FROM Users WHERE username = ?) OR userId_to IN(SELECT id FROM Users WHERE username = ?);
+                             DELETE FROM UserToGroup WHERE userId IN(SELECT id FROM Users WHERE username = ?);
+                             DELETE FROM UserToEvent WHERE userId IN(SELECT id FROM Users WHERE username = ?);
+                             DELETE FROM UserToSetting WHERE userId IN(SELECT id FROM Users WHERE username = ?);
+                             `,[data.username, data.username, data.username, data.username, data.username, data.username, data.username])
+            await deleteAllUserComments(con, data.username)
+            await deleteAllUserPosts(con, data.username)
+            endRequestWithMessage(res, 200, "User has been deleted.")
+        }
+        catch(e){
+            logErrorAndEndRequest(res, e)
+        }
     },
 
     changePassword: function(res, con, data){
