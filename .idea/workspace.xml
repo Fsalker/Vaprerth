@@ -4,88 +4,6 @@
     <list default="true" id="31d9d311-ef00-49a1-aabf-3d8d214b742b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/API_tests.js" afterPath="$PROJECT_DIR$/API_tests.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/assertion-error/History.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/assertion-error/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/assertion-error/index.d.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/assertion-error/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/assertion-error/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/.npmignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/CODEOWNERS" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/CODE_OF_CONDUCT.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/History.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/ReleaseNotes.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/chai.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/karma.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/karma.sauce.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/assertion.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/config.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/core/assertions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/interface/assert.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/interface/expect.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/interface/should.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/addChainableMethod.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/addLengthGuard.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/addMethod.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/addProperty.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/compareByInspect.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/expectTypes.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/flag.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/getActual.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/getEnumerableProperties.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/getMessage.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/getOwnEnumerableProperties.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/getOwnEnumerablePropertySymbols.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/getProperties.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/inspect.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/isNaN.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/isProxyEnabled.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/objDisplay.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/overwriteChainableMethod.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/overwriteMethod.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/overwriteProperty.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/proxify.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/lib/chai/utils/transferFlags.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/register-assert.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/register-expect.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/register-should.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/sauce.browsers.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/check-error/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/check-error/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/check-error/check-error.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/check-error/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/check-error/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/deep-eql/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/deep-eql/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/deep-eql/deep-eql.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/deep-eql/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/deep-eql/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-func-name/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-func-name/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-func-name/get-func-name.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-func-name/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/get-func-name/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pathval/CHANGELOG.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pathval/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pathval/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pathval/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pathval/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pathval/pathval.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/type-detect/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/type-detect/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/type-detect/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/type-detect/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/type-detect/type-detect.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
       <change beforePath="$PROJECT_DIR$/server/APIs.js" afterPath="$PROJECT_DIR$/server/APIs.js" />
       <change beforePath="$PROJECT_DIR$/server/initDatabase.js" afterPath="$PROJECT_DIR$/server/initDatabase.js" />
@@ -98,122 +16,123 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="80" column="50" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logging.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/logging.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APIs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/APIs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-121">
-              <caret line="154" column="13" lean-forward="false" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="API_tests.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/API_tests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="initDatabase.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/initDatabase.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="134" column="42" lean-forward="false" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6417143">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="318">
+                  <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="secrets.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/secrets.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="APIs.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server/APIs.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="675">
+                  <caret line="514" column="6" lean-forward="false" selection-start-line="514" selection-start-column="6" selection-end-line="514" selection-end-column="6" />
+                  <folding>
+                    <marker date="1537730890975" expanded="true" signature="1296:1340" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="initDatabase.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server/initDatabase.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2039">
+                  <caret line="164" column="13" lean-forward="true" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="API_tests.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/API_tests.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2040">
+                  <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>validUserAuthentification</find>
-      <find>throw</find>
-      <find>selcett</find>
-      <find>selectt</find>
-      <find>gionica</find>
-      <find>validateuser</find>
-      <find>input:</find>
-      <find>logs out</find>
-      <find>authen</find>
-      <find>res, 200</find>
-      <find>api_te</find>
-      <find>delete</find>
-      <find>de</find>
-      <find>123</find>
-      <find>deletea</find>
-      <find>deleteacc</find>
-      <find>y =</find>
+      <find>sendmail</find>
+      <find>!.</find>
+      <find>minutes = 1</find>
+      <find>login:</find>
+      <find>async function(res</find>
+      <find>async function(res, con, data){ try</find>
+      <find>table comm</find>
+      <find>targetid</find>
+      <find>varchar(1000</find>
+      <find>reports</find>
+      <find>another</find>
+      <find>another user</find>
+      <find>if(!data.tar</find>
+      <find>undefined</find>
+      <find>if(!validat</find>
+      <find>targettype</find>
+      <find>supersecre</find>
+      <find>for</find>
+      <find>for the</find>
+      <find>changepass</find>
+      <find>auth</find>
+      <find>group</find>
+      <find>public</find>
+      <find>publicity</find>
+      <find>groups</find>
+      <find>changepas</find>
       <find>validate</find>
-      <find>deleteall</find>
-      <find>delete from</find>
-      <find>USERTOSET</find>
-      <find>endrequestwithme</find>
-      <find>sessions</find>
-      <find>UserToSettings</find>
-      <find>deleteAllUserPosts</find>
-      <find>deletealluserco</find>
-      <find>has been de</find>
-      <find>looking u</find>
-      <find>lollollol</find>
-      <find>an api</find>
+      <find>&quot;public&quot;</find>
+      <find>bool</find>
+      <find>boole</find>
     </findStrings>
     <replaceStrings>
       <replace>function(res, data)</replace>
       <replace>function(res, con</replace>
+      <replace>: async function(</replace>
+      <replace>Test failed</replace>
+      <replace>responseIsOk(err, res)</replace>
+      <replace>(resolve, reject) =&gt;</replace>
+      <replace>INVALID_PARAMETERS</replace>
+      <replace>AUTHENTIFICATION_FAILED</replace>
+      <replace>= ?</replace>
+      <replace>userId</replace>
+      <replace>) return end</replace>
+      <replace>);\n`</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -223,13 +142,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/server/logging.js" />
-        <option value="$PROJECT_DIR$/server/secrets.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/server/test.js" />
-        <option value="$PROJECT_DIR$/server/initDatabase.js" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/server/APIs.js" />
         <option value="$PROJECT_DIR$/API_tests.js" />
+        <option value="$PROJECT_DIR$/server/res/forgotPassword.html" />
+        <option value="$PROJECT_DIR$/server/secrets.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/server/initDatabase.js" />
+        <option value="$PROJECT_DIR$/server/APIs.js" />
       </list>
     </option>
   </component>
@@ -245,9 +165,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="273" />
-    <option name="y" value="28" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1522" />
     <option name="height" value="926" />
   </component>
@@ -269,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -297,7 +218,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,6 +225,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -318,17 +239,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.API_tests.js">
+  <component name="RunManager" selected="Node.js.server.js">
     <configuration name="API_tests.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="API_tests.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="APIs.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="APIs.js" working-dir="$PROJECT_DIR$/server" />
     <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$" />
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.API_tests.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.APIs.js" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.API_tests.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.server.js" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.APIs.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.API_tests.js" />
       </list>
     </recent_temporary>
   </component>
@@ -349,29 +273,34 @@
       <workItem from="1536624580198" duration="5026000" />
       <workItem from="1536713806005" duration="21891000" />
       <workItem from="1536900282639" duration="4243000" />
-      <workItem from="1536913208371" duration="5312000" />
+      <workItem from="1536913208371" duration="5757000" />
+      <workItem from="1536992318009" duration="19530000" />
+      <workItem from="1537058106801" duration="3305000" />
+      <workItem from="1537169550065" duration="9089000" />
+      <workItem from="1537354407882" duration="46053000" />
+      <workItem from="1537697373473" duration="12595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47979000" />
+    <option name="totallyTimeSpent" value="138996000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="273" y="28" width="1522" height="926" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14475432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.069270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925338" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29461458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -389,10 +318,179 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/secrets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/APIs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5610">
+          <caret line="330" column="6" lean-forward="true" selection-start-line="330" selection-start-column="6" selection-end-line="330" selection-end-column="6" />
+          <folding>
+            <marker date="1537730890975" expanded="true" signature="1296:1340" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/APIs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7667">
+          <caret line="451" column="19" lean-forward="true" selection-start-line="451" selection-start-column="19" selection-end-line="451" selection-end-column="19" />
+          <folding>
+            <marker date="1537730890975" expanded="true" signature="1296:1340" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="12" lean-forward="false" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/initDatabase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/APIs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4522">
+          <caret line="266" column="6" lean-forward="true" selection-start-line="266" selection-start-column="6" selection-end-line="266" selection-end-column="6" />
+          <folding>
+            <marker date="1537730890975" expanded="true" signature="1296:1340" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2635">
+          <caret line="155" column="26" lean-forward="true" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="61" lean-forward="false" selection-start-line="89" selection-start-column="61" selection-end-line="89" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/APIs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <marker date="1537730890975" expanded="true" signature="1296:1340" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/initDatabase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2635">
+          <caret line="155" column="26" lean-forward="true" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="50" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/logging.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/APIs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2618">
+          <caret line="154" column="13" lean-forward="false" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
+          <folding>
+            <marker date="1537730890975" expanded="true" signature="1296:1340" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/initDatabase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="134" column="42" lean-forward="false" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -405,7 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -413,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -421,7 +517,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2516">
           <caret line="148" column="21" lean-forward="true" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="21" />
-          <folding />
+          <folding>
+            <marker date="1537730890975" expanded="true" signature="1296:1340" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -429,7 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -469,7 +566,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
+          <folding>
+            <marker date="1537730890975" expanded="true" signature="1296:1340" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -485,7 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -501,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -534,35 +631,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/secrets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APItests.py" />
-    <entry file="file://$PROJECT_DIR$/server/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/initDatabase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="134" column="42" lean-forward="false" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/logging.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -570,31 +643,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/res/forgotPassword.html" />
+    <entry file="file://$PROJECT_DIR$/API_tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/secrets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="80" column="50" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="50" />
+        <state relative-caret-position="318">
+          <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/initDatabase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2039">
+          <caret line="164" column="13" lean-forward="true" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/APIs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="154" column="13" lean-forward="false" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_tests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="675">
+          <caret line="514" column="6" lean-forward="false" selection-start-line="514" selection-start-column="6" selection-end-line="514" selection-end-column="6" />
+          <folding>
+            <marker date="1537730890975" expanded="true" signature="1296:1340" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

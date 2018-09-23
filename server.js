@@ -20,14 +20,15 @@ var CONNECTION_JSON = {
 } // We get our connection data either from the environment variables or from secrets.js
 
 // Database
-const DROP_AND_CREATE_TABLES = false; // Delete all tables and remake them. Bear with this!!
+const DROP_AND_CREATE_TABLES = true; // Delete all tables and remake them. Bear with this!!
 
 // Run da Server
 startServer()
 
 var con; // Connection variable
+var server;
 function startServer(){
-    var server = http.createServer(requestListener);
+    server = http.createServer(requestListener);
     con = mysql.createConnection(CONNECTION_JSON)
     //con = mysql.createPool(CONNECTION_JSON)
     con.query = util.promisify(con.query) // Make quieries "await"able
@@ -67,7 +68,7 @@ function requestListener(req, res){
             if(url == "/") rightmostItem = "index.html" // Handle default index requests
             log("File has been requested: " + rightmostItem)
             fs.readFile("./public/"+rightmostItem, function(err, data){
-                if(err) {log(err); res.end("Oh noes, an error has occurred during processing your request.")}
+                if(err) {log(err); res.writeHead(500); res.end("Oh noes, an error has occurred during processing your request.")}
                 else {
                     var extension = rightmostItem.split(".").pop()
                     log("File has been sent succesfully!")
@@ -79,29 +80,38 @@ function requestListener(req, res){
             // Solve API calls
             API_url = url.substring(1)
             if (APIs[API_url]) { // This is an API request
-                log("An API has been requested!")
+                //log("An API has been requested!")
                 var body = []
                 // Catch incoming request body data
                 req.on("error", (e) => {throw encodeURI()})
                 req.on("data", (chunk) => {body.push(chunk)})
                 req.on("end", () => {
                     try{
-                        body = JSON.parse(Buffer.concat(body).toString())
+                        body = Buffer.concat(body).toString()
+                        if(body) body = JSON.parse(body)
                         APIs[API_url](res, con, body) // Let the API function handle our request
                     }
                     catch(e)
                     {
                         log(e)
+                        res.writeHead(500);
                         res.end("An error has occurred. Most likely, the request data could not be parsed.")
                     }
                 })
             }
-            else // This is... dunno, nothing.
-                res.end("Hey there! Your request could not be processed. This is likely a programming error! Stand by until we've solved it... (or contact us)");
+            else { // This is... dunno, nothing. A request that our server does not serve :D
+                res.writeHead(500);
+                res.end("Hey there! Your request could not be processed. This is likely a programming error! You might've queried for a request that we cannot solve. Stand by until we've solved it... (or contact us)");
+            }
         }
     }
     catch(e){
         log(e)
+        res.writeHead(500);
         res.end("An unexpected error has occurred :(")
     }
+}
+
+module.exports = {
+    server: server
 }
